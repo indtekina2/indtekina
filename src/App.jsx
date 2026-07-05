@@ -3,19 +3,18 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+import NavBar from './Components/NavBar'
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
+        <NavBar/>
+        {/* <Routes>
+          <Route path='/' element={<Home/>}></Route>
+        </Routes> */}
     </>
   )
 }
