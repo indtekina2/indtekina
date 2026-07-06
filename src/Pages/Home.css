@@ -1,0 +1,62 @@
+/* Working on the hero section */
+.hero_container {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 0.2fr 2fr 1fr 0.5fr;
+
+  /* text-align: center; */
+  grid-row: 2/3;
+
+  animation: fadeIn 1.1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero_text {
+  grid-column: 2/3;
+
+  /* text-align: center; */
+  align-self: center;
+}
+
+/* Obviously, I hate myself... I needed to add this */
+@media only screen and (max-width: 768px) {
+  .hero_container {
+    display: grid;
+    place-items: center; /* centers both horizontally & vertically */
+    height: 100vh;
+    margin: 0;
+  }
+  .hero { 
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .hero_text {
+    grid-column: auto;
+  }
+
+  .hero_image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero_image img {
+    width: 90%;
+    height: auto;
+  }
+}

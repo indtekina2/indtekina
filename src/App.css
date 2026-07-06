@@ -81,4 +81,13 @@ p {
 
 img {
   border-radius: 0px 20px 0px 20px;
+  transition: transform 0.3s;
+}
+
+img:hover{
+  transform: scale(1.01);
+}
+
+a{
+  text-decoration: none;
 }

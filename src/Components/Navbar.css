@@ -14,7 +14,12 @@
   transition: box-shadow 0.3s ease;
 }
 
-.logo {
+.navbar{
+  cursor: pointer;
+}
+
+.logo{
+  text-decoration: none;
   margin-right: auto;
   font-weight: 600;
   letter-spacing: -0.5px;
@@ -39,6 +44,10 @@
   transition: all 0.3s ease;
   position: relative;
   padding: 4px 0;
+}
+
+.nav_links a.active{
+  color: rgb(196, 228, 255);
 }
 
 /* Simple underline animation */
