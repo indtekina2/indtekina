@@ -6,7 +6,7 @@ import "./Navbar.css";
 
 function NavBar() {
   const [showMenuIco, setShowMenuIco] = useState(false);
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const showToggle = () => {
     setShowMenuIco((prev) => !prev);
@@ -27,16 +27,44 @@ const navigate = useNavigate();
         <nav className={showMenuIco ? "showMenu" : "hideMenu"}>
           <ul className="nav_links">
             <li>
-              <NavLink to={"/"}>Home</NavLink>
+              <NavLink
+                to={"/"}
+                onClick={() => {
+                  showMenuIco(false);
+                }}
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <NavLink to={"/about"}>About</NavLink>
+              <NavLink
+                to={"/about"}
+                onClick={() => {
+                  showMenuIco(false);
+                }}
+              >
+                About
+              </NavLink>
             </li>
             <li>
-              <NavLink to={"/projects"}>Projects</NavLink>
+              <NavLink
+                to={"/projects"}
+                onClick={() => {
+                  showMenuIco(false);
+                }}
+              >
+                Projects
+              </NavLink>
             </li>
             <li>
-              <NavLink to={"/services"}>Services</NavLink>
+              <NavLink
+                to={"/services"}
+                onClick={() => {
+                  showMenuIco(false);
+                }}
+              >
+                Services
+              </NavLink>
             </li>
           </ul>
         </nav>

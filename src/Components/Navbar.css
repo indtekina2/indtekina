@@ -14,7 +14,7 @@
   transition: box-shadow 0.3s ease;
 }
 
-.navbar{
+.navbar h1{
   cursor: pointer;
 }
 
