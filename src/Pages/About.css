@@ -1,0 +1,19 @@
+/* Working on the hero section */
+.about_container {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+
+    min-height: 100vh;
+}
+
+.about {
+  display: grid;
+
+  /* text-align: center; */
+  grid-row: 2/3;
+
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+
+  animation: fadeIn 1.1s ease-in forwards;
+}

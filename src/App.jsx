@@ -1,16 +1,17 @@
-import { useState } from 'react'
-import './App.css'
-import { Route, Routes } from 'react-router-dom'
+import { useState } from "react";
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
 
 // All the pages
-import Home from './Pages/Home'
+import Home from "./Pages/Home";
+import About from "./Pages/About";
 
 // All the components
 import NavBar from "./Components/NavBar";
-import Footer from './Components/Footer'
+import Footer from "./Components/Footer";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -18,14 +19,15 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />}></Route>
+          <Route path="/about" element={<About/>}></Route>
         </Routes>
       </main>
 
       <footer>
-        <Footer/>
+        <Footer />
       </footer>
     </>
   );
 }
 
-export default App
+export default App;
