@@ -1,5 +1,5 @@
 import React from 'react'
-import './card.css'
+import './Card.css'
 import logo from '../assets/logo.png'
 
 function Card({ img_src, name, description, lessons, link }) {
