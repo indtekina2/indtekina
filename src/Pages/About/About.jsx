@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css"
 import { TypeAnimation } from "react-type-animation";
-import resume from "../assets/resume.pdf";
+import resume from '../../assets/Resume.pdf';
 import { useNavigate } from "react-router-dom";
 
 function About() {

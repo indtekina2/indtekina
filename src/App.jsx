@@ -3,8 +3,9 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 
 // All the pages
-import Home from "./Pages/Home";
-import About from "./Pages/About";
+import Home from "./Pages/Home/Home";
+import About from "./Pages/About/About";
+import Projects from "./Pages/Projects/Projects"
 
 // All the components
 import NavBar from "./Components/NavBar";
@@ -19,7 +20,8 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/about" element={<About/>}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </main>
 

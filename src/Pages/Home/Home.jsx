@@ -31,7 +31,7 @@ function Home() {
             <button
               className="secondary_btn empty_button"
               onClick={() => {
-                navigate("/projects");
+                navigate("/services");
               }}
             >
               Services
