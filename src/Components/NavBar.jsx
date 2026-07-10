@@ -56,16 +56,6 @@ function NavBar() {
                 Projects
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                to={"/services"}
-                onClick={() => {
-                  showMenuIco(false);
-                }}
-              >
-                Services
-              </NavLink>
-            </li>
           </ul>
         </nav>
 

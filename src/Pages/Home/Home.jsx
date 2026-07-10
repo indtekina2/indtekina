@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import { useNavigate } from "react-router-dom";
 
-
+import profile_img from "../../assets/Last_Pic.png"
 
 function Home() {
   const navigate = useNavigate();
@@ -26,21 +26,21 @@ function Home() {
                 navigate("/projects");
               }}
             >
-              View Projects
+              Projects
             </button>
             <button
               className="secondary_btn empty_button"
               onClick={() => {
-                navigate("/services");
+                navigate("/about");
               }}
             >
-              Services
+              About Me
             </button>
           </div>
         </div>
 
         <div className="hero_image">
-          <img src="https://picsum.photos/500/350" alt="hero image" />
+          <img src={profile_img} alt="hero image" />
         </div>
       </section>
     </div>

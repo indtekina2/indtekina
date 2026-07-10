@@ -2,6 +2,7 @@
 .hero_container {
   display: grid;
   grid-template-rows: 1fr 2fr 1fr;
+  height: 100vh;
 }
 
 .hero {
@@ -19,6 +20,10 @@
 
   /* text-align: center; */
   align-self: center;
+}
+
+.hero_image img{
+  height: 80%;
 }
 
 /* Obviously, I hate myself... I needed to add this */
