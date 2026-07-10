@@ -18,6 +18,7 @@ function App() {
   return (
     <>
       <NavBar />
+      <div className="spacer"></div>
       <main>
         <Routes>
           <Route path="/" element={<Home />}></Route>
