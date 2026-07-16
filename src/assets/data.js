@@ -47,7 +47,7 @@ const projects = [
       "State management",
     ],
     img: weatherImg,
-    link: "https://weather-app-mu-ruddy-40.vercel.app/",
+    link: "https://github.com/indtekina2/weather-app",
   },
   {
     id: 4,

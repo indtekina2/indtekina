@@ -10,8 +10,15 @@ function Projects() {
     <div className="projectContainer">
       <div className="spacer"></div>
       <div className="project_hero">
-        {projects.map((project, index) => (
-          <Card img_src={project.img} name={project.name} description={project.description} lessons={project.lessons} link={project.link}/>
+        {projects.map((project) => (
+          <Card
+            key={project.id}
+            img_src={project.img}
+            name={project.name}
+            description={project.description}
+            lessons={project.lessons}
+            link={project.link}
+          />
         ))}
       </div>
     </div>

@@ -30,7 +30,7 @@ function NavBar() {
               <NavLink
                 to={"/"}
                 onClick={() => {
-                  showMenuIco(false);
+                  setShowMenuIco(false);
                 }}
               >
                 Home
@@ -40,7 +40,7 @@ function NavBar() {
               <NavLink
                 to={"/about"}
                 onClick={() => {
-                  showMenuIco(false);
+                  setShowMenuIco(false);
                 }}
               >
                 About
@@ -50,7 +50,7 @@ function NavBar() {
               <NavLink
                 to={"/projects"}
                 onClick={() => {
-                  showMenuIco(false);
+                  setShowMenuIco(false);
                 }}
               >
                 Projects
