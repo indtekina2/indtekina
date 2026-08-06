@@ -2,11 +2,38 @@ import todoImg from "../assets/todo.png";
 import movieImg from "../assets/movie.png";
 import weatherImg from "../assets/weather.png";
 import profileImg from "../assets/logo.png";
-
+import LinkUpPic from "../assets/LinkUp.png";
 
 const projects = [
   {
-    id: 1,
+    id: 5,
+    name: "LinkUp",
+    description:
+      "A full-stack real-time messaging application with secure authentication, instant messaging, and group conversations.",
+    tech: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Socket.IO",
+      "JWT",
+      "HTML",
+      "CSS",
+      "JavaScript",
+    ],
+    lessons: [
+      "JWT authentication and protected routes",
+      "Real-time communication with Socket.IO",
+      "MongoDB schema design and data modeling",
+      "REST API development with Express.js",
+      "State management in React",
+      "Building scalable full-stack applications",
+    ],
+    img: todoImg,
+    link: "https://link-up-indtekina.vercel.app/home",
+  },
+  {
+    id: 4,
     name: "Todo App",
     description:
       "A task management application with persistent local storage and an intuitive user interface.",
@@ -20,7 +47,7 @@ const projects = [
     link: "https://github.com/indtekina2/todo-app",
   },
   {
-    id: 2,
+    id: 3,
     name: "Movie Search",
     description:
       "Search for movies and view details in real time using a movie database API.",
@@ -35,7 +62,7 @@ const projects = [
     link: "https://github.com/indtekina2/movie-app",
   },
   {
-    id: 3,
+    id: 2,
     name: "Weather App",
     description:
       "A React application that displays live weather information for any city using a weather API.",
@@ -50,7 +77,7 @@ const projects = [
     link: "https://github.com/indtekina2/weather-app",
   },
   {
-    id: 4,
+    id: 1,
     name: "Profile Website",
     description:
       "A responsive personal portfolio showcasing my skills, projects, and contact information.",
