@@ -29,7 +29,7 @@ const projects = [
       "State management in React",
       "Building scalable full-stack applications",
     ],
-    img: todoImg,
+    img: LinkUpPic,
     link: "https://link-up-indtekina.vercel.app/home",
   },
   {

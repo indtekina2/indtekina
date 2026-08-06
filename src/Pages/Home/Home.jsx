@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import { useNavigate } from "react-router-dom";
 
-import profile_img from "../../assets/Last_Pic.png"
+import profile_img from "../../assets/Last_Pic.png";
 
 function Home() {
   const navigate = useNavigate();
@@ -10,11 +10,12 @@ function Home() {
     <div className="hero_container">
       <section className="hero">
         <div className="hero_text">
-          <h2>I build modern websites and interfaces.</h2>
+          <h2>I build full-stack web applications that solve real problems.</h2>
 
           <p>
-            Frontend developer learning and creating clean, responsive, and
-            professional websites.
+            I create modern, responsive, and scalable applications using React,
+            Node.js, Express, and MongoDB, with a focus on performance and user
+            experience.
           </p>
 
           <br />
