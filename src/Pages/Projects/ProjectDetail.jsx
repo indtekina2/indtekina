@@ -5,17 +5,17 @@ import "./ProjectDetail.css";
 const projectDetails = {
   linkup: {
     name: "LinkUp",
-    title: "LinkUp — Real-Time Chat App by indtekina",
-    description: "LinkUp is a full-stack chat application built by indtekina with React, Node.js, Express, MongoDB and Socket.IO. It focuses on authenticated private conversations and group messaging.",
-    summary: "A full-stack messaging application exploring authentication, conversation data modelling, and real-time communication.",
+    title: "LinkUp — Full-Stack Chat Application by indtekina",
+    description: "LinkUp is a full-stack chat application built by indtekina with React, Node.js, Express, and MongoDB. It includes authenticated private conversations, group messaging, and persistent message history.",
+    summary: "A full-stack messaging application focused on authentication, conversation data modelling, and reliable message persistence. The current public README describes version 1 as REST-based; real-time Socket.IO delivery is listed as a planned version 2 feature.",
     features: [
       "Private one-to-one conversations",
       "Group conversations and message history",
       "JWT-based authentication and protected routes",
       "MongoDB persistence with Express API endpoints",
-      "Real-time communication with Socket.IO",
+      "A documented roadmap for real-time messaging and presence",
     ],
-    technologies: ["React", "Vite", "Node.js", "Express", "MongoDB", "Mongoose", "Socket.IO", "JWT"],
+    technologies: ["React", "Vite", "Node.js", "Express", "MongoDB", "Mongoose", "JWT", "Socket.IO (planned)"],
     github: "https://github.com/indtekina2/LinkUp",
     demo: "https://link-up-indtekina.vercel.app/home",
     schemaType: "SoftwareApplication",
