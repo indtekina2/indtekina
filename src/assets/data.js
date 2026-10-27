@@ -6,10 +6,38 @@ import LinkUpPic from "../assets/LinkUp.png";
 
 const projects = [
   {
+    id: 6,
+    name: "Study Tracker",
+    slug: "study-tracker",
+    description:
+      "A full-stack MERN study dashboard for tracking subjects, chapters, study sessions, practice accuracy, and mock-test progress.",
+    tech: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "TanStack Query",
+      "Recharts",
+    ],
+    lessons: [
+      "Subject and chapter progress tracking",
+      "Daily study logs and practice accuracy",
+      "Mock-test score analytics",
+      "JWT access and refresh tokens",
+      "Interactive dashboard charts",
+    ],
+    img: profileImg,
+    link: "https://github.com/indtekina2/Study-Tracker",
+    detailUrl: "/projects/study-tracker",
+  },
+  {
     id: 5,
     name: "LinkUp",
+    slug: "linkup",
     description:
-      "A full-stack real-time messaging application with secure authentication, instant messaging, and group conversations.",
+      "A full-stack chat application exploring authenticated private conversations, group messaging, and persistent message history.",
     tech: [
       "React",
       "Node.js",
@@ -17,20 +45,18 @@ const projects = [
       "MongoDB",
       "Socket.IO",
       "JWT",
-      "HTML",
-      "CSS",
       "JavaScript",
     ],
     lessons: [
       "JWT authentication and protected routes",
-      "Real-time communication with Socket.IO",
-      "MongoDB schema design and data modeling",
+      "Conversation data modelling",
+      "MongoDB persistence",
       "REST API development with Express.js",
-      "State management in React",
-      "Building scalable full-stack applications",
+      "React state management",
     ],
     img: LinkUpPic,
     link: "https://link-up-indtekina.vercel.app/home",
+    detailUrl: "/projects/linkup",
   },
   {
     id: 4,
@@ -50,7 +76,7 @@ const projects = [
     id: 3,
     name: "Movie Search",
     description:
-      "Search for movies and view details in real time using a movie database API.",
+      "Search for movies and view details using a movie database API.",
     tech: ["HTML", "CSS", "JavaScript", "API"],
     lessons: [
       "Fetching API data",
@@ -65,7 +91,7 @@ const projects = [
     id: 2,
     name: "Weather App",
     description:
-      "A React application that displays live weather information for any city using a weather API.",
+      "A React application that displays weather information for a city using a weather API.",
     tech: ["React", "CSS", "Weather API"],
     lessons: [
       "React Hooks",
@@ -80,7 +106,7 @@ const projects = [
     id: 1,
     name: "Profile Website",
     description:
-      "A responsive personal portfolio showcasing my skills, projects, and contact information.",
+      "A responsive personal portfolio showcasing skills, projects, and contact information.",
     tech: ["React", "React Router", "CSS"],
     lessons: [
       "Responsive design",

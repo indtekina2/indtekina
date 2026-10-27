@@ -1,38 +1,39 @@
-import React from 'react'
-import './Card.css'
-import logo from '../assets/logo.png'
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Card.css";
 
-function Card({ img_src, name, description, lessons, link }) {
+function Card({ img_src, name, description, lessons, link, detailUrl }) {
   return (
-    <div className="card">
-      <img src={img_src} alt={name} />
+    <article className="card">
+      <img src={img_src} alt={`${name} project by indtekina`} loading="lazy" />
       <h3>{name}</h3>
 
       <p>
-        <i>
-          <b>Description:</b>
-        </i>{" "}
+        <i><b>Description:</b></i>{" "}
         {description}
       </p>
 
       <br />
 
       <ul>
-        {lessons.map((lesson, index) => (
-          <li key={index}>{lesson}</li>
+        {lessons.map((lesson) => (
+          <li key={lesson}>{lesson}</li>
         ))}
       </ul>
 
       <br />
 
-      <button
-        className="full_button"
-        onClick={() => window.open(link, "_blank", "noopener,noreferrer")}
-      >
-        View Project
-      </button>
-    </div>
+      {detailUrl && (
+        <p>
+          <Link to={detailUrl}>Read the {name} project overview</Link>
+        </p>
+      )}
+
+      <a className="full_button" href={link} target="_blank" rel="noreferrer">
+        {detailUrl ? "Open live demo / repository" : "View project"}
+      </a>
+    </article>
   );
 }
 
-export default Card
+export default Card;

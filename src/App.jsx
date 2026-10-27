@@ -4,8 +4,9 @@ import { Route, Routes } from "react-router-dom";
 // All the pages
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
-import Projects from "./Pages/Projects/Projects"
-import ErrorPage from "./Pages/ErrorPage"
+import Projects from "./Pages/Projects/Projects";
+import ProjectDetail from "./Pages/Projects/ProjectDetail";
+import ErrorPage from "./Pages/ErrorPage";
 
 // All the components
 import NavBar from "./Components/NavBar";
@@ -18,10 +19,11 @@ function App() {
       <div className="spacer"></div>
       <main>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/about" element={<About />}></Route>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="*" element={<ErrorPage/>} />
+          <Route path="/projects/:slug" element={<ProjectDetail />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </main>
 

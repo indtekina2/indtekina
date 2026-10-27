@@ -1,0 +1,75 @@
+.project-detail {
+  width: min(900px, 100% - 40px);
+  margin: 40px auto 80px;
+  line-height: 1.7;
+}
+
+.project-eyebrow {
+  color: var(--btn_color);
+  font-family: var(--main_font);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.project-detail h1 {
+  margin: 8px 0 16px;
+  font-size: clamp(2.4rem, 7vw, 4rem);
+}
+
+.project-summary {
+  max-width: 760px;
+  font-size: 1.2rem;
+}
+
+.project-detail section {
+  margin-top: 32px;
+}
+
+.project-detail h2 {
+  margin-bottom: 12px;
+  font-size: 1.6rem;
+}
+
+.project-detail ul {
+  padding-left: 24px;
+}
+
+.project-detail li {
+  margin: 7px 0;
+}
+
+.technology-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-left: 0 !important;
+  list-style: none;
+}
+
+.technology-list li {
+  margin: 0;
+  padding: 5px 10px;
+  border: 1px solid var(--btn_color);
+  border-radius: 999px;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.project-actions a,
+.project-detail > a {
+  display: inline-block;
+  color: var(--secText_color);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.project-actions a:hover,
+.project-detail > a:hover {
+  color: var(--btn_color);
+}
