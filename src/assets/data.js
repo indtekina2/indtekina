@@ -1,4 +1,4 @@
-import studyTracker from "../assets/studyTracker.png";
+import studyTracker from "../assets/StudyTracker.png";
 import profileImg from "../assets/logo.png";
 import LinkUpPic from "../assets/LinkUp.png";
 import salonImg from "../assets/AandB.png";
