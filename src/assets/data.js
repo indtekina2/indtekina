@@ -1,12 +1,67 @@
-import todoImg from "../assets/todo.png";
-import movieImg from "../assets/movie.png";
-import weatherImg from "../assets/weather.png";
+import studyTracker from "../assets/studyTracker.png";
 import profileImg from "../assets/logo.png";
 import LinkUpPic from "../assets/LinkUp.png";
+import salonImg from "../assets/AandB.png";
 
 const projects = [
   {
-    id: 5,
+    id: 8,
+    name: "A&B Salon and Academy",
+    type: "Real-world Client Project",
+    description:
+      "A full-stack salon management system developed for a real-world client. Includes billing, invoices, customer management, memberships, inventory, staff management, services, and business analytics.",
+    tech: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "REST API",
+      "Tailwind CSS",
+      "JavaScript",
+    ],
+    lessons: [
+      "Building software for real-world business requirements",
+      "Developing billing and invoice management systems",
+      "Database design and business data modeling",
+      "Authentication and role-based access",
+      "Inventory and membership management",
+      "Deploying full-stack applications",
+      "Working with real clients and translating requirements into features",
+    ],
+    img: salonImg,
+    link: "https://aand-b-salon-and-academy.vercel.app/",
+  },
+  {
+    id: 7,
+    name: "Study Tracker",
+    description:
+      "A full-stack study and productivity tracking application designed to help users organize tasks, monitor progress, and manage their study activities.",
+    tech: [
+      "React 19",
+      "Node.js",
+      "Express.js 5",
+      "MongoDB",
+      "JWT",
+      "TanStack Query",
+      "Axios",
+      "Tailwind CSS 4",
+      "Recharts",
+    ],
+    lessons: [
+      "Building full-stack applications with modern React",
+      "JWT authentication using HTTP-only cookies",
+      "Server-state management with TanStack Query",
+      "REST API architecture",
+      "Data visualization with Recharts",
+      "Frontend-backend integration",
+      "Building maintainable application architecture",
+    ],
+    img: studyTracker,
+    link: "https://github.com/indtekina2/Study-Tracker",
+  },
+  {
+    id: 6,
     name: "LinkUp",
     description:
       "A full-stack real-time messaging application with secure authentication, instant messaging, and group conversations.",
@@ -33,63 +88,26 @@ const projects = [
     link: "https://link-up-indtekina.vercel.app/home",
   },
   {
-    id: 4,
-    name: "Todo App",
+    id: 5,
+    name: "Portfolio Website",
     description:
-      "A task management application with persistent local storage and an intuitive user interface.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    lessons: [
-      "DOM manipulation",
-      "Event handling",
-      "Working with localStorage",
+      "A personal developer portfolio showcasing my projects, technical skills, experience, and development journey.",
+    tech: [
+      "React",
+      "Vite",
+      "JavaScript",
+      "CSS",
+      "React Router",
     ],
-    img: todoImg,
-    link: "https://github.com/indtekina2/todo-app",
-  },
-  {
-    id: 3,
-    name: "Movie Search",
-    description:
-      "Search for movies and view details in real time using a movie database API.",
-    tech: ["HTML", "CSS", "JavaScript", "API"],
     lessons: [
-      "Fetching API data",
-      "Async/Await",
-      "JSON parsing",
-      "Handling loading and error states",
-    ],
-    img: movieImg,
-    link: "https://github.com/indtekina2/movie-app",
-  },
-  {
-    id: 2,
-    name: "Weather App",
-    description:
-      "A React application that displays live weather information for any city using a weather API.",
-    tech: ["React", "CSS", "Weather API"],
-    lessons: [
-      "React Hooks",
-      "Component-based architecture",
-      "API integration",
-      "State management",
-    ],
-    img: weatherImg,
-    link: "https://github.com/indtekina2/weather-app",
-  },
-  {
-    id: 1,
-    name: "Profile Website",
-    description:
-      "A responsive personal portfolio showcasing my skills, projects, and contact information.",
-    tech: ["React", "React Router", "CSS"],
-    lessons: [
-      "Responsive design",
-      "Routing",
-      "Reusable components",
-      "Clean UI design",
+      "Responsive web design",
+      "Reusable React components",
+      "Frontend architecture",
+      "Deployment with Vercel",
+      "Building a professional developer presence",
     ],
     img: profileImg,
-    link: "https://github.com/indtekina2/indtekina",
+    link: "https://indtekina.vercel.app",
   },
 ];
 
