@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import { useNavigate } from "react-router-dom";
 
-import profile_img from "../../assets/Last_Pic.png";
+import profile_img from "../../assets/profile.png";
 
 function Home() {
   const navigate = useNavigate();
